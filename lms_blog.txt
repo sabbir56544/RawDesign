@@ -1,0 +1,185 @@
+import React from 'react';
+import Banner from '../components/common/banner';
+import HomeLayout from '../layouts/home';
+import { FiUser, FiMessageCircle,FiCalendar } from 'react-icons/fi';
+
+
+const Blog = () => {
+    return (
+        <>
+            <Banner title="Our Blog" img="blog_banner.png" />
+            <div className="container mx-auto">
+                <div className="flex flex-wrap-reverse justify-between">
+                    <div className="col-8">
+                        <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-12 max-w-[707px]">
+                            <a href="#">
+                                <img className="rounded-t-lg w-full" src="blog1.png" alt="" />
+                            </a>
+                            <div className="p-5">
+                                <div className="flex">
+                                    <FiUser className='text-secondary_text w-6 h-6' />
+                                    <span className="text-secondary_text paragraph">Admin</span>
+
+                                    <img src="/icons/categories.png" className='w-4 h-4 ml-2 mt-2' />
+                                    <span className="text-secondary_text paragraph ml-2">UI/UX Design</span>
+
+                                    <FiMessageCircle className='w-6 h-6 lg:ml-96 ml-2 mt-2 text-secondary_text' />
+                                    <span className="text-secondary_text paragraph ml-1 mt-1">5</span>
+                                </div>
+
+                                <p className='header_3 text-black mt-4'>What is design thinking</p>
+
+                                <p className='text-secondary_text paragraph mt-4'>
+                                    Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-12 max-w-[707px]">
+                            <a href="#">
+                                <img className="rounded-t-lg w-full" src="blog2.png" alt="" />
+                            </a>
+                            <div className="p-5">
+                                <div className="flex">
+                                    <FiUser className='text-secondary_text w-6 h-6' />
+                                    <span className="text-secondary_text paragraph">Admin</span>
+
+                                    <img src="/icons/categories.png" className='w-4 h-4 ml-4 mt-2' />
+                                    <span className="text-secondary_text paragraph ml-2">UI/UX Design</span>
+
+                                    <FiMessageCircle className='w-6 h-6 lg:ml-96 ml-2 mt-2 text-secondary_text' />
+                                    <span className="text-secondary_text paragraph ml-1 mt-1">5</span>
+                                </div>
+
+                                <p className='header_3 text-black mt-4'>What is design thinking</p>
+
+                                <p className='text-secondary_text paragraph mt-4'>
+                                    Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-12 max-w-[707px]">
+                            <a href="#">
+                                <img className="rounded-t-lg w-full" src="blog3.png" alt="" />
+                            </a>
+                            <div className="p-5">
+                                <div className="flex">
+                                    <FiUser className='text-secondary_text w-6 h-6' />
+                                    <span className="text-secondary_text paragraph">Admin</span>
+
+                                    <img src="/icons/categories.png" className='w-4 h-4 ml-4 mt-2' />
+                                    <span className="text-secondary_text paragraph ml-2">UI/UX Design</span>
+
+                                    <FiMessageCircle className='w-6 h-6 lg:ml-96 ml-2 mt-2 text-secondary_text' />
+                                    <span className="text-secondary_text paragraph ml-1 mt-1">5</span>
+                                </div>
+
+                                <p className='header_3 text-black mt-4'>What is design thinking</p>
+
+                                <p className='text-secondary_text paragraph mt-4'>
+                                    Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip. Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-4 ">
+                        <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-12 max-w-[368px]">
+                            <div className='p-3 md:p-5' >
+                            <h3 className='header_6 mb-6' > Search</h3>
+                            <input type="text" name="" id="" className=' w-[306px] h-[56px] rounded-lg pl-6 border-tertiary_text border focus:border-secondary_text ' placeholder='What do you want to learn?' />
+                            </div>
+                        </div>
+                        <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-12 max-w-[368px]">
+                            <div className='p-3 md:p-5' >
+                            <h3 className='header_6 mb-6' > Categories</h3>
+                            <div>
+                                <ul>
+                                    <li className='text-secondary_text header_6 mb-4'>UI/UX Design</li>
+                                    <li className='text-secondary_text header_6 mb-4'>UI/UX Design</li>
+                                    <li className='text-secondary_text header_6 mb-4'>UI/UX Design</li>
+                                    <li className='text-secondary_text header_6 mb-4'>UI/UX Design</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <div className="bg-white  rounded-lg shadow-sm mt-12 max-w-[368px]">
+                            <div className='p-3 md:p-5' >
+                            <h3 className='header_6 mb-6' > Recent posts</h3>
+                            <div>
+                                <ul>
+                                    <li className='text-secondary_text header_6 mb-4'>
+                                        <div className='flex items-center '>
+                                            <img src="blog2.png" className='w-32 h-32 mr-6 rounded-lg ' />
+                                            <div>
+                                            <div className='text-black header_6 flex items-center '>
+                                            <FiCalendar className='text-secondary_text w-6 h-6' />
+                                               <p className='text-secondary_text paragraph_1  ml-2' > 15 may 2022 </p>
+                                                </div>
+                                                <p className='text-primary_text paragraph_1 mt-4 ' >
+                                                Common WordPress blocks and top block builders
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className='text-secondary_text header_6 mb-4'>
+                                        <div className='flex items-center '>
+                                            <img src="blog2.png" className='w-32 h-32 mr-6 rounded-lg ' />
+                                            <div>
+                                            <div className='text-black header_6 flex items-center '>
+                                            <FiCalendar className='text-secondary_text w-6 h-6' />
+                                               <p className='text-secondary_text paragraph_1  ml-2' > 15 may 2022 </p>
+                                                </div>
+                                                <p className='text-primary_text paragraph_1 mt-4 ' >
+                                                Common WordPress blocks and top block builders
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className='text-secondary_text header_6 mb-4'>
+                                        <div className='flex items-center '>
+                                            <img src="blog2.png" className='w-32 h-32 mr-6 rounded-lg ' />
+                                            <div>
+                                            <div className='text-black header_6 flex items-center '>
+                                            <FiCalendar className='text-secondary_text w-6 h-6' />
+                                               <p className='text-secondary_text paragraph_1  ml-2' > 15 may 2022 </p>
+                                                </div>
+                                                <p className='text-primary_text paragraph_1 mt-4 ' >
+                                                Common WordPress blocks and top block builders
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className='text-secondary_text header_6 mb-4'>
+                                        <div className='flex items-center '>
+                                            <img src="blog2.png" className='w-32 h-32 mr-6 rounded-lg ' />
+                                            <div>
+                                            <div className='text-black header_6 flex items-center '>
+                                            <FiCalendar className='text-secondary_text w-6 h-6' />
+                                               <p className='text-secondary_text paragraph_1  ml-2' > 15 may 2022 </p>
+                                                </div>
+                                                <p className='text-primary_text paragraph_1 mt-4 ' >
+                                                Common WordPress blocks and top block builders
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </>
+
+    );
+};
+
+Blog.layout = HomeLayout
+
+export default Blog;

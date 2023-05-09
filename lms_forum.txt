@@ -1,0 +1,87 @@
+import React from 'react';
+
+const FeatureTopics = () => {
+    return (
+        <div className='container mx-auto'>
+             <div className='flex flex-col items-center justify-center mx-auto text-center mt-10'>
+                <h1 className='text-primary_text header_3'>Featured Topics</h1>
+                <span>
+                    <img src='/line.png' alt='underline' className='mx-auto' />
+                </span>
+            </div>
+            <div className="flex mt-8 flex-col lg:flex-row">
+                <div className="lg:ml-8 lg:mt-0 mt-2 border-2 border-tertiary_text border-opacity-30 lg:w-[1170px] lg:h-[170px] flex rounded-lg shadow-sm">
+                    <div className='mt-8 lg:pl-10 pl-4'>
+                        <img src="icon1.png" alt="" className='w-24 h-24 rounded-full' />
+                    </div>
+                    <div className='lg:mt-8 mt-4 lg:pl-8 pl-4'>
+                        <p className='text-primary_text header_4'>What is social media?</p>
+                        <p className="mt-1 paragraph_1 text-secondary_text">Social media is a collective term for websites and applications that focus on communication, ...</p>
+                        <div className="flex lg:mt-4">
+                            <div>
+
+                                <img src="user1.png" />
+                            </div>
+                            <div className='-ml-2'>
+
+                                <img src="user2.png" />
+                            </div>
+
+                            <p className='text-secondary_text paragraph ml-2 mt-2'>Created By: <span className='text-black heading_6'>Liton Nondi</span> | 5 Posts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex mt-8 flex-col lg:flex-row">
+                <div className="lg:ml-8 lg:mt-0 mt-2 border-2 border-tertiary_text border-opacity-30 lg:w-[1170px] lg:h-[170px] flex rounded-lg shadow-sm">
+                    <div className='mt-8 lg:pl-10 pl-4'>
+                        <img src="icon1.png" alt="" className='w-24 h-24 rounded-full' />
+                    </div>
+                    <div className='lg:mt-8 mt-4 lg:pl-8 pl-4'>
+                        <p className='text-primary_text header_4'>What is social media?</p>
+                        <p className="mt-1 paragraph_1 text-secondary_text">Social media is a collective term for websites and applications that focus on communication, ...</p>
+                        <div className="flex lg:mt-4">
+                            <div>
+
+                                <img src="user1.png" />
+                            </div>
+                            <div className='-ml-2'>
+
+                                <img src="user2.png" />
+                            </div>
+
+                            <p className='text-secondary_text paragraph ml-2 mt-2'>Created By: <span className='text-black heading_6'>Liton Nondi</span> | 5 Posts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex mt-8 flex-col lg:flex-row">
+                <div className="lg:ml-8 lg:mt-0 mt-2 border-2 border-tertiary_text border-opacity-30 lg:w-[1170px] lg:h-[170px] flex rounded-lg shadow-sm">
+                    <div className='mt-8 lg:pl-10 pl-4'>
+                        <img src="icon1.png" alt="" className='w-24 h-24 rounded-full' />
+                    </div>
+                    <div className='lg:mt-8 mt-4 lg:pl-8 pl-4'>
+                        <p className='text-primary_text header_4'>What is social media?</p>
+                        <p className="mt-1 paragraph_1 text-secondary_text">Social media is a collective term for websites and applications that focus on communication, ...</p>
+                        <div className="flex lg:mt-4">
+                            <div>
+
+                                <img src="user1.png" />
+                            </div>
+                            <div className='-ml-2'>
+
+                                <img src="user2.png" />
+                            </div>
+
+                            <p className='text-secondary_text paragraph ml-2 mt-2'>Created By: <span className='text-black heading_6'>Liton Nondi</span> | 5 Posts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default FeatureTopics;

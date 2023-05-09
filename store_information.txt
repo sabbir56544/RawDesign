@@ -1,0 +1,163 @@
+import React from 'react';
+import HomeLayout from '../../layouts/home';
+import { AiOutlineHome } from 'react-icons/ai';
+import { BsTelephoneForward } from 'react-icons/bs';
+import {RiAccountCircleFill} from 'react-icons/ri';
+import {BiStore} from 'react-icons/bi';
+import {BiCategory} from 'react-icons/bi';
+import { HiOutlineLocationMarker } from 'react-icons/hi';
+import {TbFileDescription} from 'react-icons/tb';
+
+const StoreInformation = () => {
+    return (
+        <>
+            <div className="bg-[#CED7E2] mt-5 h-[244px]">
+                <div className="container mx-auto">
+                    <nav className="flex px-5 py-3 text-dark_gray" aria-label="Breadcrumb">
+                        <ol className="inline-flex items-center space-x-1 md:space-x-3 mt-10">
+                            <li className="inline-flex items-center">
+                                <a href="#" className="inline-flex items-center paragraph_2">
+                                    <AiOutlineHome className="w-8 h-8 mr-2" />
+                                    Home / <span className="text-icon_hover pl-2">Store Information</span>
+                                </a>
+                            </li>
+                        </ol>
+                    </nav>
+                    <h1 className="text-dark_gray header_1 mt-1 ml-5">Store Information</h1>
+
+                </div>
+            </div>
+
+            <div className="container lg:py-10">
+                <div className="flex lg:flex-row flex-col gap-x-4 gap-y-3">
+                    <div className='lg:w-[646px] lg:h-[651px] mt-20 mr-20'>
+                        <div className='lg:absolute hero_font_family flex lg:w-[646px] lg:h-[651px] pr-32'>
+                            <img src="/image2.png" alt="logo" width={646} height={640} className='object-cover' />
+                        </div>
+                    </div>
+                    <div className="flex">
+                        <div className='lg:gap-x-12 lg:pl-24 lg:mt-32 mt-8'>
+                            <form className="space-y-4 md:space-y-6" action="#">
+                                <div className="flex">
+                                    <div className="w-full px-3 -mt-6">
+                                        <label htmlFor="" className="text-dark_gray header_5 px-1">Store Name</label>
+                                        <div className="flex">
+                                            <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center mt-6"><BiStore className='seller_input_icons' /></div>
+                                            <input type="email" className="seller_information" placeholder="Store Name" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex">
+                                    <div className=" w-full px-3">
+                                        <label htmlFor="" className="text-dark_gray header_5 px-1">Category</label>
+                                        <div className="flex">
+                                            <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center mt-6"><BiCategory className='seller_input_icons' /></div>
+                                            <input type="email" className="seller_information" placeholder="Electronics" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex">
+                                    <div className="w-full px-3">
+                                        <label htmlFor="" className="text-dark_gray header_5 px-1">Location</label>
+                                        <div className="flex">
+                                            <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center mt-6"><HiOutlineLocationMarker className='seller_input_icons' /></div>
+                                            <input type="email" className="seller_information" placeholder="Green Street 738, NY, USA" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex">
+                                    <div className="w-full px-3">
+                                        <label htmlFor="" className="text-dark_gray header_5 px-1">Description</label>
+                                        <div className="flex">
+                                            <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center mt-6"><TbFileDescription className='seller_input_icons' /></div>
+                                            <input type="email" className="seller_information" placeholder="Sansa acacaa " />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex">
+                                    <div className="w-full px-3">
+                                        <label htmlFor="" className="text-dark_gray header_5 px-1">Tax Name</label>
+                                        <div className="flex">
+                                            <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center mt-6"><RiAccountCircleFill className='seller_input_icons' /></div>
+                                            <input type="email" className="seller_information" placeholder="Your Name" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex">
+                                    <div className=" w-full px-3">
+                                        <label htmlFor="" className="text-dark_gray header_5 px-1">Tax Number</label>
+                                        <div className="flex">
+                                            <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center mt-6"><BsTelephoneForward className='seller_input_icons' /></div>
+                                            <input type="email" className="seller_information" placeholder="+8817 2729 2899" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex">
+                                    <div className=" w-full px-3">
+                                        <label htmlFor="" className="text-dark_gray header_5  px-1">Nid Number</label>
+                                        <div className="flex">
+                                            <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center mt-6"><BsTelephoneForward className='seller_input_icons' /></div>
+                                            <input type="email" className="seller_information" placeholder="+8817 2729 2899" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex">
+                                    <div className=" w-full px-3">
+                                        <label htmlFor="" className="text-dark_gray header_5 px-1">Store Logo</label>
+                                        <div className="flex">
+                                            <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center mt-6"></div>
+                                            <input type="file" className="seller_file_input" placeholder="+8817 2729 2899" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex">
+                                    <div className=" w-full px-3">
+                                        <label htmlFor="" className="text-dark_gray header_5 px-1">National Indentity Card</label>
+                                        <div className="flex">
+                                            <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center mt-6"></div>
+                                            <input type="file" className="seller_file_input" placeholder="+8817 2729 2899" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex">
+                                    <div className=" w-full px-3">
+                                        <label htmlFor="" className="text-dark_gray header_5 px-1">Address Proof</label>
+                                        <div className="flex">
+                                            <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center mt-6"></div>
+                                            <input type="file" className="seller_file_input" placeholder="+8817 2729 2899" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            
+
+                                {/* submit button */}
+                                <div className="flex">
+                                    <div className="mt-2 w-full px-3">
+                                        <button type="submit" className="lg:w-[535px] w-full bg-secondary h-[60px] bg-primary_blue text-white header_5 rounded-xl">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            {/* signup form */}
+
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </>
+    );
+};
+
+StoreInformation.layout = HomeLayout
+
+export default StoreInformation;

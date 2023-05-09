@@ -1,0 +1,135 @@
+import React from 'react';
+import HomeLayout from '../layouts/home';
+import { AiOutlineHome } from 'react-icons/ai';
+import { HiOutlineLocationMarker } from 'react-icons/hi';
+import { BsTelephoneForward } from 'react-icons/bs';
+import { MdMarkEmailRead } from 'react-icons/md';
+import { MdFax } from 'react-icons/md';
+
+const Contact = () => {
+    return (
+        <>
+            <div className="bg-[#CED7E2] mt-5 h-[244px]">
+                <div className="container mx-auto">
+                    <nav className="flex px-5 py-3 text-dark_gray" aria-label="Breadcrumb">
+                        <ol className="inline-flex items-center space-x-1 md:space-x-3 mt-10">
+                            <li className="inline-flex items-center">
+                                <a href="#" className="inline-flex items-center paragraph_2">
+                                    <AiOutlineHome className="w-8 h-8 mr-2" />
+                                    Home / <span className="text-icon_hover pl-2">Contact</span>
+                                </a>
+                            </li>
+
+
+
+                        </ol>
+                    </nav>
+                    <h1 className="text-dark_gray header_1 mt-1 ml-5">Contact Us</h1>
+
+                </div>
+            </div>
+
+            <div className="container lg:py-10">
+                <div className="flex lg:flex-row flex-col gap-x-4 gap-y-3 px-6">
+                    <div className='w-full lg:w-[580px] h-[723px] relative items-start mt-20'>
+                        <div className='lg:absolute z-20 bg-dark_gray hero_font_family flex h-full rounded-3xl '>
+                            <div className='rounded-lg m-[4%]'>
+                                <p className='header_6 text-[#FE4651]'>Contact Us</p>
+                                <p className='header_2 text-white'>Send Us a Message</p>
+                                <p className='paragraph text-[#fff] mt-2'>Please do not hesitate to send us a message, We are looking forward to hearing from you! We reply within 24 hours.</p>
+
+                                <div className='flex flex-col rounded-full'>
+
+                                    <input type="text" id="username" className="text-white header_6 text-#807676 mt-10 placeholder-secondary_gray border-b py-1 border-b-secondary_gray bg-dark_gray focus:outline-none " autoComplete="off" placeholder='Name' />
+
+                                    <input type="text" id="username" className="text-white  header_6 mt-10 placeholder-secondary_gray border-b py-1 bg-dark_gray focus:outline-none focus:#807676 focus:border-b-2 border-b-secondary_gray transition-colors peer" autoComplete="off" placeholder='Email' />
+
+                                    <input type="text" id="username" className="text-white  header_6 mt-10 placeholder-secondary_gray border-b py-1 bg-dark_gray focus:outline-none border-b-secondary_gray focus:#807676 focus:border-b-2 transition-colors peer" autoComplete="off" placeholder='Phone' />
+
+                                    <input type="text" id="username" className="text-white  header_6 mt-10 placeholder-secondary_gray border-b py-1 bg-dark_gray focus:outline-none focus:#807676  border-b-secondary_gray focus:border-b-2 transition-colors peer" autoComplete="off" placeholder='Subject' />
+
+                                    <textarea type="text" id="username" className="text-white  header_6 mt-10 placeholder-secondary_gray  border-b py-1 bg-dark_gray focus:outline-none focus:#807676 border-b-secondary_gray focus:border-b-2 transition-colors peer" autoComplete="off" placeholder='Write your Massage' rows="3" />
+
+
+                                    <div className='flex justify-center mb-20'>
+                                        <button className='bg-[#FFFFFF] text-icon_hover header_6 mt-10 py-2 px-32 rounded-lg'>Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex">
+                        <div className='lg:gap-x-12 lg:pl-24'>
+                            <div className='flex items-center lg:mt-20'>
+                                <span className='flex justify-center'>
+                                    <img src="/support.png" alt="logo" />
+                                </span>
+                                <div className="pl-4">
+                                    <p className='mt-2 text-[#292B49] header_4'>Contact US
+                                        <br />
+                                        24 /7
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className='flex items-center mt-10'>
+                                <span className='flex justify-center bg-gray_4 rounded-full '>
+                                    <HiOutlineLocationMarker className='w-16 h-16 text-icon_hover' />
+                                </span>
+                                <div className="pl-4">
+                                    <p className='mt-2 text-[#292B49] header_4'>Address </p>
+                                    <p className='paragraph_2 text-gray pt-2'>85 KDA Outer bypass Road, Sonadanga, Khulna 9100,</p>
+                                </div>
+                            </div>
+
+                            <div className='flex items-center mt-10'>
+                                <span className='flex justify-center bg-gray_4 rounded-full '>
+                                    <BsTelephoneForward className='w-16 h-16 text-icon_hover' />
+                                </span>
+                                <div className="pl-4">
+                                    <p className='mt-2 text-[#292B49] header_4'>Tel </p>
+                                    <p className='paragraph_2 text-gray pt-2'>+8801404049797</p>
+                                </div>
+                            </div>
+
+                            <div className='flex items-center mt-10'>
+                                <span className='flex justify-center bg-gray_4 rounded-full '>
+                                    <MdMarkEmailRead className='w-16 h-16 text-icon_hover' />
+                                </span>
+                                <div className="pl-4">
+                                    <p className='mt-2 text-[#292B49] header_4'>Email </p>
+                                    <p className='paragraph_2 text-gray pt-2'>Support.appstick.com.bd</p>
+                                </div>
+                            </div>
+
+                            <div className='flex items-center mt-10'>
+                                <span className='flex justify-center bg-gray_4 rounded-full '>
+                                    <MdFax className='w-16 h-16 text-icon_hover' />
+                                </span>
+                                <div className="pl-4">
+                                    <p className='mt-2 text-[#292B49] header_4'>Fax </p>
+                                    <p className='paragraph_2 text-gray pt-2'>+8801404049797</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="container lg:pl-5">
+                <div className="inset-0 w-[100%]">
+                    <iframe className="w-[100%]" height={400} frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"></iframe>
+                </div>
+            </div>
+        </>
+
+
+    );
+};
+
+Contact.layout = HomeLayout;
+
+export default Contact;

@@ -1,0 +1,448 @@
+
+import React, { useState } from 'react';
+import HomeLayout from '../../layouts/home';
+import { AiOutlineHome } from 'react-icons/ai';
+import Link from 'next/link';
+import { AiOutlineStar } from 'react-icons/ai';
+
+const Account = () => {
+
+    const [tab, setTab] = useState(0);
+    return (
+        <>
+            <div className="bg-[#CED7E2] mt-5 h-[244px]">
+                <div className="container mx-auto">
+                    <nav className="flex px-5 py-3 text-dark_gray" aria-label="Breadcrumb">
+                        <ol className="inline-flex items-center space-x-1 md:space-x-3 mt-10">
+                            <li className="inline-flex items-center">
+                                <a href="#" className="inline-flex items-center paragraph_2">
+                                    <AiOutlineHome className="w-8 h-8 mr-2" />
+                                    Home / <span className="text-icon_hover pl-2">Contact</span>
+                                </a>
+                            </li>
+                        </ol>
+                    </nav>
+                    <h1 className="text-dark_gray header_1 mt-1 ml-5">Manage My Account</h1>
+                </div>
+            </div>
+            <div className="container lg:py-10">
+                <div className="flex lg:flex-row flex-col gap-x-4 gap-y-3 lg:px-6">
+                    <div className='w-[290px] lg:w-[290px] h-[662px] relative items-start mt-20'>
+                        <div className=''>
+                            <div className='m-[4%]'>
+                                <p className='header_4 text-dark_gray'>Hello, Liton Nandi</p>
+                            </div>
+
+                            <div className='m-[4%] mt-8'>
+                                <p className='header_4 text-dark_gray'>Manage My Account</p>
+                                <div className='mt-4 flex'>
+                                    <div className="flex flex-col justify-start items-start">
+                                        <button onClick={() => setTab(0)}>
+                                            <p className='header_6 text-bodytext active:text-icon_hover'>Account</p>
+                                        </button>
+                                        <button onClick={() => setTab(1)}>
+                                            <p className='header_6 text-bodytext active:text-icon_hover mt-2'>My Profile</p>
+                                        </button>
+                                        <button onClick={() => setTab(2)}>
+                                            <p className='header_6 text-bodytext mt-3'>Address Book</p>
+                                        </button>
+                                        <button onClick={() => setTab(3)}>
+                                            <p className='header_6 text-bodytext mt-3'>My Payment Option</p>
+                                        </button>
+                                        <button href="/">
+                                            <p className='header_6 text-bodytext mt-3'>Vouchers</p>
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div className='m-[4%] mt-8'>
+                                <p className='header_4 text-dark_gray'>Manage My Account</p>
+                                <div className='mt-4'>
+                                    <Link href="/">
+                                        <p className='header_6 text-bodytext'>My Returns</p>
+                                    </Link>
+                                    <Link href="/">
+                                        <p className='header_6 text-bodytext mt-3'>My Cancelations</p>
+                                    </Link>
+                                </div>
+                            </div>
+
+                            <div className='m-[4%] mt-8'>
+                                <button onClick={() => setTab(8)}>
+                                    <p className='header_4 text-dark_gray'>My Reviews</p>
+                                </button>
+                                <p className='header_4 text-dark_gray mt-4 '>Sell With Us</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="flex">
+                        <div className='lg:gap-x-12 lg:pl-24'>
+                            <div className='lg:mt-24'>
+                                <div className="">
+                                    <p className=' text-[#292B49] header_5'>Manage My Account
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div hidden={tab != 0}>
+                                <div className="flex lg:flex-row flex-col gap-x-4 gap-y-3 px-2 mt-4">
+                                    <div className="bg-[#E5F7FF] flex rounded-lg gap-x-0 lg:gap-x-6 w-[312px] h-[297px]">
+                                        <div className="flex flex-col pl-4">
+                                            <div className="paragraph_2 text-dark_gray pt-4">Personal Info | <span className="text-icon_hover">EDIT</span></div>
+                                            <div className="header_5 text-bodytext mr-6 mt-5">Liton Nandi</div>
+                                            <div className="header_5 text-bodytext mr-6 mt-2">leton@gmail.com</div>
+                                            <div className="header_5 text-icon_hover mr-6 mt-20">Subscribe Our Newsletter </div>
+                                        </div>
+                                    </div>
+                                    <div className="bg-[#E5F7FF] flex rounded-lg gap-x-0 lg:gap-x-6 lg:w-[648px] w-[312px] h-[297px]">
+                                        <div className="flex flex-col pl-4">
+                                            <div className="paragraph_2 text-dark_gray pt-4">Address Book | <span className="text-icon_hover">EDIT</span></div>
+                                            <div className="flex mt-10 flex-col lg:flex-row">
+                                                <div className=''>
+                                                    <div className="pl-1">
+                                                        <p className='mt-5 text-dark_gray header_5'>Leton Nondi</p>
+                                                        <p className='paragraph_2 text-gray mt-2 w-64'>
+                                                            Chulkathi Bazer Khulna - Bagerhat - Foyla + 1 235 4654 326
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div className='lg:pl-16'>
+                                                    <div className="pl-1">
+                                                        <p className='mt-5 text-dark_gray header_5'>Leton Nondi</p>
+                                                        <p className='paragraph_2 text-gray mt-2 w-64'>
+                                                            Chulkathi Bazer Khulna - Bagerhat - Foyla + 1 235 4654 326
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div hidden={tab != 1}>
+
+                                <div className="flex mt-4">
+
+                                    <div className="bg-[#E5F7FF] flex rounded-lg gap-x-0 lg:gap-x-6 lg:w-[984px] w-[312px] h-[538px]">
+                                        <div className="flex flex-col pl-4">
+                                            <div className="paragraph_2 text-dark_gray pt-4">Address Book | <span className="text-icon_hover">EDIT</span></div>
+                                            <div className="flex mt-10 flex-col lg:flex-row">
+                                                <div className=''>
+                                                    <div className="pl-1">
+                                                        <p className='lg:mt-5 text-dark_gray header_6'>Full Name</p>
+                                                        <p className='paragraph_3 text-gray mt-2 w-64'>
+                                                            Leton Nandi
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div className='lg:pl-16'>
+                                                    <div className="pl-1">
+                                                        <p className='lg:mt-5 text-dark_gray header_6'>Email Address | <span className="text-icon_hover">Change</span></p>
+                                                        <p className='paragraph_3 text-gray mt-2 w-64'>
+                                                            leton@gmail.com
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div className='lg:pl-16'>
+                                                    <div className="pl-1">
+                                                        <p className='lg:mt-5 text-dark_gray header_6'>Phone | <span className="text-icon_hover">Change</span></p>
+                                                        <p className='paragraph_3 text-gray mt-2 w-64'>
+                                                            +1 546 4523 3264
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div className="flex mt-10 flex-col lg:flex-row">
+                                                <div className=''>
+                                                    <div className="pl-1">
+                                                        <p className='lg:mt-5 text-dark_gray header_6'>Birthday</p>
+                                                        <p className='paragraph_2 text-gray mt-2 w-64'>
+                                                            1983-12-07
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div className='lg:pl-16'>
+                                                    <div className="pl-1">
+                                                        <p className='lg:mt-5 text-dark_gray header_6'>Gender</p>
+                                                        <p className='paragraph_2 text-gray mt-2 w-64'>
+                                                            Male
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p className="header_5 text-icon_hover lg:mt-16">Subscribe Our Newsletter </p>
+
+                                            <button className="text-white bg-icon_hover mt-5 w-[280px] h-[50px] rounded-lg uppercase paragraph_2">Edit Profile</button>
+                                            <button className="text-white bg-icon_hover mt-5 w-[280px] h-[50px] rounded-lg uppercase paragraph_2">Change Password</button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div hidden={tab != 2} >
+
+                                <div className="flex mt-4">
+                                    <div className="bg-[#E5F7FF] flex rounded-lg gap-x-0 lg:gap-x-6 lg:w-[984px] w-[312px] h-[178px]">
+                                        <div className="flex flex-col">
+                                            <div className="flex flex-col lg:flex-row">
+                                                <div className='lg:pl-8 pl-4'>
+                                                    <div className="pl-1">
+                                                        <p className='mt-5 text-dark_gray header_6'>Email Address | <span className="text-icon_hover">Change</span></p>
+                                                        <p className='paragraph_3 text-gray mt-2 w-64'>
+                                                            Chulkathi Bazer Khulna - Bagerhat - Foyla + 1 235 4654 326
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div className='lg:pl-64 pl-4'>
+                                                    <div className="lg:pl-72 pl:4">
+                                                        <p className='mt-5 text-icon_hover header_5'>Edit</p>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div hidden={tab != 3} >
+
+                                <div className="bg-[#E5F7FF] flex rounded-lg gap-x-0 lg:gap-x-6 lg:w-[984px] w-[360px] h-[264px] mt-5">
+
+                                    <div className="flex flex-col">
+                                        <div className="flex flex-col lg:flex-row">
+                                            <div className='lg:pl-8 pl-4'>
+                                                <div className="pl-1">
+                                                    <p className='mt-5 text-dark_gray header_6'>Account</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="flex flex-row lg:flex-row ">
+                                            <div className='lg:pl-8 pl-4'>
+                                                <div className="pl-1">
+                                                    <p className='mt-5 text-dark_gray header_6'>
+                                                        <img src="/p3.png" alt="" className="w-10 h-6" />
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div className='lg:pl-4 pl-4'>
+                                                <div className="pl-1">
+                                                    <p className='mt-5 text-dark_gray header_6'>014*****326</p>
+                                                </div>
+                                            </div>
+
+                                            <div className='lg:pl-96 pl-20'>
+                                                <div className="lg:pl-72">
+                                                    <p className='mt-5 text-icon_hover header_6'>Delete</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="flex flex-row lg:flex-row mt-4">
+                                            <div className='lg:pl-8 pl-4'>
+                                                <div className="pl-1">
+                                                    <p className='mt-5 text-dark_gray header_6'>
+                                                        <img src="/p2.png" alt="" className="w-10 h-6" />
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div className='lg:pl-4 pl-4'>
+                                                <div className="pl-1">
+                                                    <p className='mt-5 text-dark_gray header_6'>014*****326</p>
+                                                </div>
+                                            </div>
+
+                                            <div className='lg:pl-96 pl-20'>
+                                                <div className="lg:pl-72">
+                                                    <p className='mt-5 text-icon_hover header_6'>Delete</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+                            <div hidden={tab != 8} >
+
+                                <div className="bg-[#E5F7FF] flex rounded-lg gap-x-0 lg:gap-x-6 lg:w-[984px] w-[360px] h-[426px] mt-5">
+                                    <div className="flex flex-col lg:flex-col mt-4">
+                                        <div className='lg:pl-4'>
+                                            <div className='flex items-center rounded-2x '>
+                                                <span className='flex justify-center bg-gray_4 rounded-full '>
+                                                    <img src="/review.png" alt="" className="mr-5" width={88} height={88} />
+                                                </span>
+                                                <div className="lg:pl-2">
+                                                    <div className='mt-5'>
+                                                        <p className=' text-dark_gray header_5'>Liton Nondi</p>
+                                                    </div>
+                                                    <div className="flex pt-2">
+                                                        <AiOutlineStar className="text-secondary" size={24} />
+                                                        <AiOutlineStar className="text-secondary ml-2" size={24} />
+                                                        <AiOutlineStar className="text-secondary ml-2" size={24} />
+                                                        <AiOutlineStar className="text-secondary ml-2" size={24} />
+                                                        <AiOutlineStar className="text-bodytext ml-2" size={24} />
+                                                    </div>
+
+                                                    <div className="text-bodytext header_5 mt-2">
+                                                        June 7, 2013
+
+                                                        <p className='text-bodytext header_5 mt-2'>This will go great with my Hoodie that I ordered a few weeks ago.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="border-b border-gray border-opacity-30 w-[922px] mt-8"></div>
+
+
+                                        <div className='lg:pl-4 mt-4'>
+                                            <div className='flex items-center rounded-2x '>
+                                                <span className='flex justify-center bg-gray_4 rounded-full '>
+                                                    <img src="/review.png" alt="" className="mr-5" width={88} height={88} />
+                                                </span>
+                                                <div className="lg:pl-2">
+                                                    <div className='mt-5'>
+                                                        <p className=' text-dark_gray header_5'>Liton Nondi</p>
+                                                    </div>
+                                                    <div className="flex pt-2">
+                                                        <AiOutlineStar className="text-secondary" size={24} />
+                                                        <AiOutlineStar className="text-secondary ml-2" size={24} />
+                                                        <AiOutlineStar className="text-secondary ml-2" size={24} />
+                                                        <AiOutlineStar className="text-secondary ml-2" size={24} />
+                                                        <AiOutlineStar className="text-bodytext ml-2" size={24} />
+                                                    </div>
+
+                                                    <div className="text-bodytext header_5 mt-2">
+                                                        June 7, 2013
+
+                                                        <p className='text-bodytext header_5 mt-2'>This will go great with my Hoodie that I ordered a few weeks ago.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+
+
+
+                            </div>
+
+
+                            <h1 className="text-dark_gray header_5 mt-8">Recent Orders</h1>
+
+                            <div class="relative overflow-x-auto mt-5">
+                                <table class="w-full text-left">
+                                    <thead class="text-dark_gray header_6 bg-[#E5F7FF] rounded-2xl">
+                                        <tr>
+                                            <th scope="col" class="px-6 py-3 ">
+                                                Order #
+                                            </th>
+                                            <th scope="col" class="px-6 py-3">
+                                                Placed On
+                                            </th>
+                                            <th scope="col" class="px-6 py-3">
+                                                Item
+                                            </th>
+                                            <th scope="col" class="px-6 py-3">
+                                                Price
+                                            </th>
+                                            <th scope="col" class="px-6 py-3">
+
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class=" border-b border-opacity-30 border-gray mt-4">
+                                            <th scope="row" class="px-6 py-4 paragraph_2 text-bodytext">
+                                                6423135631463123
+                                            </th>
+                                            <td class="px-6 py-4 paragraph_2 text-bodytext">
+                                                Silver
+                                            </td>
+                                            <td class="px-6 py-4  paragraph_2 text-bodytext">
+                                                <img src="/products/hotdeal1.png" alt="" className='w-10 h-12' />
+                                            </td>
+                                            <td class="px-6 py-4  paragraph_2 text-bodytext">
+                                                $2999
+                                            </td>
+
+                                            <td class="px-6 py-4  paragraph_2 text-[#48E98A]">
+                                                Manage
+                                            </td>
+
+                                        </tr>
+
+                                        <tr class=" border-b border-opacity-30 border-gray mt-4">
+                                            <th scope="row" class="px-6 py-4 paragraph_2 text-bodytext">
+                                                6423135631463123
+                                            </th>
+                                            <td class="px-6 py-4 paragraph_2 text-bodytext">
+                                                Silver
+                                            </td>
+                                            <td class="px-6 py-4  paragraph_2 text-bodytext">
+                                                <img src="/products/hotdeal3.png" alt="" className='w-10 h-12' />
+                                            </td>
+                                            <td class="px-6 py-4  paragraph_2 text-bodytext">
+                                                $2999
+                                            </td>
+
+                                            <td class="px-6 py-4  paragraph_2 text-[#48E98A]">
+                                                Manage
+                                            </td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+        </>
+    );
+};
+
+Account.layout = HomeLayout
+
+export default Account;

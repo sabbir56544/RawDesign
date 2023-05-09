@@ -1,0 +1,198 @@
+import React from 'react';
+import HomeLayout from '../layouts/home';
+import Banner from '../components/common/banner';
+import { FiUser, FiCalendar } from 'react-icons/fi';
+import { FiFacebook } from "react-icons/fi";
+import { FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
+
+
+const BlogDetail = () => {
+    return (
+        <div>
+            <Banner title="Our Blog" img="blog_banner.png" />
+            <div className="container mx-auto">
+                <div className="flex flex-wrap-reverse justify-between">
+                    <div className="col-8">
+                        <div className="bg-white border-gray-200 rounded-lg shadow-sm mt-12 max-w-[707px]">
+                            <a href="#">
+                                <img className="rounded-t-lg lg:w-full" src="blog1.png" alt="" />
+                            </a>
+                            <div className="p-5">
+                                <div className="flex justify-between">
+                                    <div className="flex">
+                                        <FiUser className='text-secondary_text w-6 h-6' />
+                                        <span className="text-secondary_text paragraph">Admin</span>
+                                    </div>
+                                    <div className="flex">
+                                        <FiCalendar className='w-6 h-6 lg:ml-96 ml-2 mt-2 text-secondary_text' />
+                                        <span className="text-secondary_text paragraph ml-1 mt-1">Jun 18, 2022</span>
+                                    </div>
+                                </div>
+
+                                <p className='header_3 text-black mt-4'>Balance your priorities in life and enjoy a beautiful life</p>
+
+                                <p className='text-secondary_text paragraph mt-4'>
+                                    Living a productive and meaningful life is a balancing act. With the pressures of today’s demanding and high paced world, most people struggle to find a reasonable balance. We can easily be drawn away from our priorities when one aspect of our life consumes the bulk of our time. To a large extent, it is much like walking a tightrope. When we drift too much in one direction or the other, we become unbalanced. To sustain what we value most in our lives, we must constantly maintain our equilibrium as we move forward to achieve our purpose and goals.
+                                </p>
+
+                                <p className='text-secondary_text paragraph mt-4'>
+                                    Are you dedicating enough time and energy to the most important aspects of your life? Or do you find yourself focusing on one major area at the expense of the others?
+                                </p>
+
+                                <p className='text-secondary_text paragraph mt-4'>
+                                    Commit to finding your balance in life. Take a good look at your life. Do you feel consistently stressed, physically exhausted, mentally drained or emotionally devoid of happiness? Are you dropping the ball with key responsibilities in your personal and professional lives? Do you neglect your own well-being for the sake of others? If your answer is “yes” to any of these considerations, you may be out of balance. To find your balance, make a commitment to work through these next steps.
+                                </p>
+
+                                <div className="flex mt-8 items-center">
+                                    <p className='text-secondary_text header_6 '>
+                                        Share this post :
+                                    </p>
+                                    <div className='flex space-x-3'>
+                                        <a href='#' className=" w-10 h-10 text-white font-bold flex justify-center items-center ">
+                                            <FiFacebook className='text-secondary_text p-2 hover:text-primary' size={40} />
+                                        </a>
+                                        <a href='#' className=" w-10 h-10 text-white font-bold flex justify-center items-center">
+                                            <FaTwitter className='text-secondary_text p-2 hover:text-primary' size={40} />
+                                        </a>
+                                        <a href='#' className=" w-10 h-10 text-white font-bold flex justify-center items-center">
+                                            <FaInstagram className='text-secondary_text p-2 hover:text-primary' size={40} />
+                                        </a>
+                                        <a href='#' className=" w-10 h-10 text-white font-bold flex justify-center items-center">
+                                            <FaWhatsapp className='text-secondary_text p-2 hover:text-primary' size={40} />
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="flex mt-8 flex-col lg:flex-row">
+                                    <img src="avatar.png" alt="" className='w-24 h-24 rounded-full' />
+
+                                    <div className="lg:ml-8 lg:mt-0 mt-2 border-2 border-tertiary_text border-opacity-30 lg:w-[648px] h-28 flex justify-between">
+                                        <div className='mt-3 pl-4'>
+                                            <p className='text-primary_text header_6'>Alina Joan</p>
+                                            <p className="mt-1 paragraph_1 text-secondary_text">User</p>
+                                            <p className='text-secondary_text paragraph_1 mt-1'>Thanks for the nice article.</p>
+                                        </div>
+                                        <p className='text-secondary_text paragraph mt-3 pr-4'>
+                                            30 Jan 2023 | 3.52 <span className='text-primary underline paragraph'>Reply</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p className='text-primary_text header_5 mt-12'>
+                                    Comments(2)
+                                </p>
+
+                                <p className='text-secondary_text paragraph mt-10'>
+                                    Leave a comment:
+                                </p>
+                                <form action="" className="flex flex-col gap-y-4 w-full">
+                                <div className="flex flex-col gap-y-8">
+                                    <div className='flex flex-col lg:flex-row justify-between'>
+                                        <input type="text" name="" id="" placeholder='Your Name:' className='border-b border-opacity-50 border-tertiary_text h-[50px] pl-2 focus:border-b focus:outline-none' />
+                                        <input type="text" name="" id="" placeholder='Your Email:' className='border-b border-opacity-50 border-tertiary_text h-[50px] pl-2 focus:border-b focus:outline-none' />
+
+                                    </div>
+                                    <textarea name="" id="" cols="10" rows="5" placeholder='Write Massage' className='border-b border-opacity-50 border-tertiary_text h-[100px] pl-2 focus:border-b focus:outline-none'></textarea>
+                                </div>
+                                <div className="flex justify-center">
+                                    <button className='bg-primary hover:bg-opacity-80 transition duration-300 text-white paragraph rounded-lg h-[50px] w-[248px]'>Send</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-4 ">
+                        <div className="bg-white border-gray-200 rounded-lg shadow mt-12 max-w-[368px]">
+                            <div className='p-3 md:p-5' >
+                                <h3 className='header_6 mb-6' > Search</h3>
+                                <input type="text" name="" id="" className=' w-[306px] h-[56px] rounded-lg pl-6 border-tertiary_text border focus:outline-none' placeholder='What do you want to learn?' />
+                            </div>
+                        </div>
+                        <div className="bg-white border-gray-200 rounded-lg shadow mt-12 max-w-[368px]">
+                            <div className='p-3 md:p-5' >
+                                <h3 className='header_6 mb-6' > Categories</h3>
+                                <div>
+                                    <ul>
+                                        <li className='text-secondary_text paragraph mb-2'>Ecommerce</li>
+                                        <li className='text-secondary_text paragraph mb-2'>UX Design</li>
+                                        <li className='text-secondary_text paragraph mb-2'>Video Production</li>
+                                        <li className='text-secondary_text paragraph mb-2'>Web Development</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="bg-white  rounded-lg shadow-sm mt-12 max-w-[368px]">
+                            <div className='p-3 md:p-5' >
+                                <h3 className='header_6 mb-6' > Recent posts</h3>
+                                <div>
+                                    <ul>
+                                        <li className='text-secondary_text header_6 mb-4'>
+                                            <div className='flex items-center '>
+                                                <img src="blog2.png" className='w-32 h-32 mr-6 rounded-lg ' />
+                                                <div>
+                                                    <div className='text-black header_6 flex items-center '>
+                                                        <FiCalendar className='text-secondary_text w-6 h-6' />
+                                                        <p className='text-secondary_text paragraph_1  ml-2' > 15 may 2022 </p>
+                                                    </div>
+                                                    <p className='text-primary_text paragraph_1 mt-4 ' >
+                                                        Common WordPress blocks and top block builders
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li className='text-secondary_text header_6 mb-4'>
+                                            <div className='flex items-center '>
+                                                <img src="blog2.png" className='w-32 h-32 mr-6 rounded-lg ' />
+                                                <div>
+                                                    <div className='text-black header_6 flex items-center '>
+                                                        <FiCalendar className='text-secondary_text w-6 h-6' />
+                                                        <p className='text-secondary_text paragraph_1  ml-2' > 15 may 2022 </p>
+                                                    </div>
+                                                    <p className='text-primary_text paragraph_1 mt-4 ' >
+                                                        Common WordPress blocks and top block builders
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li className='text-secondary_text header_6 mb-4'>
+                                            <div className='flex items-center '>
+                                                <img src="blog2.png" className='w-32 h-32 mr-6 rounded-lg ' />
+                                                <div>
+                                                    <div className='text-black header_6 flex items-center '>
+                                                        <FiCalendar className='text-secondary_text w-6 h-6' />
+                                                        <p className='text-secondary_text paragraph_1  ml-2' > 15 may 2022 </p>
+                                                    </div>
+                                                    <p className='text-primary_text paragraph_1 mt-4 ' >
+                                                        Common WordPress blocks and top block builders
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li className='text-secondary_text header_6 mb-4'>
+                                            <div className='flex items-center '>
+                                                <img src="blog2.png" className='w-32 h-32 mr-6 rounded-lg ' />
+                                                <div>
+                                                    <div className='text-black header_6 flex items-center '>
+                                                        <FiCalendar className='text-secondary_text w-6 h-6' />
+                                                        <p className='text-secondary_text paragraph_1  ml-2' > 15 may 2022 </p>
+                                                    </div>
+                                                    <p className='text-primary_text paragraph_1 mt-4 ' >
+                                                        Common WordPress blocks and top block builders
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+BlogDetail.layout = HomeLayout
+export default BlogDetail;

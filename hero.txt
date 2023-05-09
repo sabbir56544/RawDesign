@@ -1,0 +1,40 @@
+import React from 'react';
+import HomeLayout from '../layouts/home';
+
+const About = () => {
+    return (
+        <>
+            <section class="text-gray-600 body-font overflow-hidden">
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                        <img alt="about" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="/about.png" />
+                        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                            <h2 class="text-[#FE4651] paragraph_4 tracking-widest">Features</h2>
+                            <h1 class="mt-2 header_3">Solutions that work together</h1>
+                            <p class="text-[#888AA0] mt-2 paragraph_4">
+                                Publish your eCommerce site quickly with our easy-to-use store builder— no coding required. Migrate your items from your point of sale system or turn your Instagram feed into a shopping site and start selling fast. Square Online works for all kinds of businesses—retail, restaurants, services.
+                            </p>
+                            <button className='text-dark_gray header_6 rounded-lg py-3 px-10 mt-8 shadow-2xl shadow-icon_hover hover:bg-icon_hover hover:text-white'> Get in Touch</button>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-4/5 mx-auto flex flex-wrap mt-16">
+                        <div class="lg:w-1/2 w-full lg:py-6 mt-6 lg:mt-0">
+                            <h2 class="text-[#FE4651] paragraph_4 tracking-widest">Features</h2>
+                            <h1 class="mt-2 header_3">All kinds of payments securely</h1>
+                            <p class="text-[#888AA0] mt-2 paragraph_4">
+                                Publish your eCommerce site quickly with our easy-to-use store builder— no coding required. Migrate your items from your point of sale system or turn your Instagram feed into a shopping site and start selling fast. Square Online works for all kinds of businesses—retail, restaurants, services.
+                            </p>
+                            <button className='text-dark_gray header_6 rounded-lg py-3 px-10 mt-8 shadow-2xl shadow-icon_hover hover:bg-icon_hover hover:text-white'> Get in Touch</button>
+                        </div>
+                        <img alt="about" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded lg:pl-16" src="/about2.png" />
+
+                    </div>
+                </div>
+            </section>
+
+        </>
+    );
+};
+About.layout = HomeLayout;
+export default About;

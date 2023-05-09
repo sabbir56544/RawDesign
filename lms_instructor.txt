@@ -1,0 +1,182 @@
+import React from 'react';
+import Link from 'next/link';
+import { AiOutlineStar } from 'react-icons/ai';
+
+
+const Instructor = () => {
+    return (
+        <div className='container mx-auto pl-8'>
+            <div className='flex flex-col items-center justify-center lg:w-[400px] mx-auto text-center'>
+                <h1 className='text-primary_text header_3'>Meet Our Expert Instructor</h1>
+                <img src='/line.png' alt='underline' className='mx-auto' />
+            </div>
+
+            <div className="flex lg:flex-row flex-col min-[1400px]:gap-x-5 gap-x-1 py-10 container">
+
+
+                <div className="flex flex-col items-center rounded-xl shadow-xl">
+                    <div className="w-full lg:w-[270px] h-full grid place-content-center rounded-2xl relative">
+
+                        <div className='mb-10'>
+                            <div className='flex justify-center'>
+                                <img src="/instructor1.png" alt="" className='mt-4' />
+                            </div>
+                            <div className='flex justify-center mt-2'>
+                                <p className='text-center header_6 text-primary_text'>Cody Fisher</p>
+                            </div>
+
+                            <div className="mt-2">
+                                <p className='paragraph_4 text-secondary_text text-center pr-4'>PHP Developer  ||  Author level 2</p>
+                                <div className="flex pt-2 justify-center">
+                                    <AiOutlineStar className="text-secondary" size={16} />
+                                    <AiOutlineStar className="text-secondary ml-2" size={16} />
+                                    <AiOutlineStar className="text-secondary ml-2" size={16} />
+                                    <AiOutlineStar className="text-secondary ml-2" size={16} />
+                                    <AiOutlineStar className="text-[#C2BABA] ml-2" size={16} />
+                                </div>
+                                <div className="flex mt-4 justify-center gap-x-4">
+                                    <img src="/CMT.png" alt="" />
+                                    <img src="/COTI.png" alt="" />
+                                    <img src="/CRO.png" alt="" />
+                                    <img src="/DAI.png" alt="" />
+                                    <img src="/DATA.png" alt="" />
+                                </div>
+
+                                <div className='border-t border-[#E5E5E5] mt-4'>
+                                    <div className='flex justify-center'>
+                                        <a href="#" className="text-primary paragraph font-bold hover:bg-primary hover:text-white mt-6 focus:ring-4 w-[224px] focus:ring-primary-200 rounded-xl text-sm px-5 py-2.5 text-center border-primary border">Book Schedule</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className="flex flex-col items-center rounded-xl shadow-xl">
+                    <div className="w-full lg:w-[270px] h-full grid place-content-center rounded-2xl relative">
+
+                        <div className='mb-10'>
+                            <div className='flex justify-center'>
+                                <img src="/instructor2.png" alt="" className='mt-4' />
+                            </div>
+                            <div className='flex justify-center mt-2'>
+                                <p className='text-center header_6 text-primary_text'>Darrell Edwards</p>
+                            </div>
+
+                            <div className="mt-2">
+                                <p className='paragraph_4 text-secondary_text text-center pr-4'>PHP Developer  ||  Author level 2</p>
+                                <div className="flex pt-2 justify-center">
+                                    <AiOutlineStar className="text-secondary" size={16} />
+                                    <AiOutlineStar className="text-secondary ml-2" size={16} />
+                                    <AiOutlineStar className="text-secondary ml-2" size={16} />
+                                    <AiOutlineStar className="text-secondary ml-2" size={16} />
+                                    <AiOutlineStar className="text-[#C2BABA] ml-2" size={16} />
+                                </div>
+                                <div className="flex mt-4 justify-center gap-x-4">
+                                    <img src="/CMT.png" alt="" />
+                                    <img src="/COTI.png" alt="" />
+                                    <img src="/CRO.png" alt="" />
+                                    <img src="/DAI.png" alt="" />
+                                    <img src="/DATA.png" alt="" />
+                                </div>
+
+                                <div className='border-t border-[#E5E5E5] mt-4'>
+                                    <div className='flex justify-center'>
+                                        <a href="#" className="text-primary paragraph font-bold hover:bg-primary hover:text-white mt-6 focus:ring-4 w-[224px] focus:ring-primary-200 rounded-xl text-sm px-5 py-2.5 text-center border-primary border">Book Schedule</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className="flex flex-col items-center rounded-xl shadow-xl">
+                    <div className="w-full lg:w-[270px] h-full grid place-content-center rounded-2xl relative">
+
+                        <div className='mb-10'>
+                            <div className='flex justify-center'>
+                                <img src="/instructor3.png" alt="" className='mt-4' />
+                            </div>
+                            <div className='flex justify-center mt-2'>
+                                <p className='text-center header_6 text-primary_text'>Cody Fisher</p>
+                            </div>
+
+                            <div className="mt-2">
+                                <p className='paragraph_4 text-secondary_text text-center pr-4'>PHP Developer  ||  Author level 2</p>
+                                <div className="flex pt-2 justify-center">
+                                    <AiOutlineStar className="text-secondary" size={16} />
+                                    <AiOutlineStar className="text-secondary ml-2" size={16} />
+                                    <AiOutlineStar className="text-secondary ml-2" size={16} />
+                                    <AiOutlineStar className="text-secondary ml-2" size={16} />
+                                    <AiOutlineStar className="text-[#C2BABA] ml-2" size={16} />
+                                </div>
+                                <div className="flex mt-4 justify-center gap-x-4">
+                                    <img src="/CMT.png" alt="" />
+                                    <img src="/COTI.png" alt="" />
+                                    <img src="/CRO.png" alt="" />
+                                    <img src="/DAI.png" alt="" />
+                                    <img src="/DATA.png" alt="" />
+                                </div>
+
+                                <div className='border-t border-[#E5E5E5] mt-4'>
+                                    <div className='flex justify-center'>
+                                        <a href="#" className="text-primary paragraph font-bold hover:bg-primary hover:text-white mt-6 focus:ring-4 w-[224px] focus:ring-primary-200 rounded-xl text-sm px-5 py-2.5 text-center border-primary border">Book Schedule</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className="flex flex-col items-center rounded-xl shadow-xl">
+                    <div className="w-full lg:w-[270px] h-full grid place-content-center rounded-2xl relative">
+
+                        <div className='mb-10'>
+                            <div className='flex justify-center'>
+                                <img src="/instructor4.png" alt="" className='mt-4' />
+                            </div>
+                            <div className='flex justify-center mt-2'>
+                                <p className='text-center header_6 text-primary_text'>Bessie Cooper</p>
+                            </div>
+
+                            <div className="mt-2">
+                                <p className='paragraph_4 text-secondary_text text-center pr-4'>PHP Developer  ||  Author level 2</p>
+                                <div className="flex pt-2 justify-center">
+                                    <AiOutlineStar className="text-secondary" size={16} />
+                                    <AiOutlineStar className="text-secondary ml-2" size={16} />
+                                    <AiOutlineStar className="text-secondary ml-2" size={16} />
+                                    <AiOutlineStar className="text-secondary ml-2" size={16} />
+                                    <AiOutlineStar className="text-[#C2BABA] ml-2" size={16} />
+                                </div>
+                                <div className="flex mt-4 justify-center gap-x-4">
+                                    <img src="/CMT.png" alt="" />
+                                    <img src="/COTI.png" alt="" />
+                                    <img src="/CRO.png" alt="" />
+                                    <img src="/DAI.png" alt="" />
+                                    <img src="/DATA.png" alt="" />
+                                </div>
+
+                                <div className='border-t border-[#E5E5E5] mt-4'>
+                                    <div className='flex justify-center'>
+                                        <a href="#" className="text-primary paragraph font-bold hover:bg-primary hover:text-white mt-6 focus:ring-4 w-[224px] focus:ring-primary-200 rounded-xl text-sm px-5 py-2.5 text-center border-primary border">Book Schedule</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    );
+};
+
+export default Instructor;

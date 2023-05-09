@@ -1,0 +1,59 @@
+import React from 'react';
+import Image from 'next/image';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
+const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    pauseOnDotsHover: true,
+};
+
+const TaxFiling = () => {
+    return (
+        <>
+
+            <div className='container hero_font_family'>
+                <div className='py-16'>
+                    <div className='lg:grid lg:grid-cols-2 gap-[10%] text-justify p-[2%]'>
+                        <div className=''>
+                            <h3 className='header_6 text-hover'>File Taxes</h3>
+                            <h1 className="focus:outline-none header_2 mt-2">
+                                How To File Tax?
+                            </h1>
+                            <p className="focus:outline-none mt-5 pr-12 paragraph text-secondary_gray text-justify">
+                                How To File Tax Short Description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            </p>
+
+                            <p className="focus:outline-none mt-5 pr-12 paragraph text-secondary_gray text-justify">
+                                How To File Tax Short Description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type .
+                            </p>
+                        </div>
+                        <Slider {...settings}>
+                            <img src="https://i.ibb.co/wMd2Q4B/new.png" alt="Purple flowers on a book" className="md:w-full sm:w-1/2 w-full rounded-3xl" />
+                            <img src="https://i.ibb.co/wMd2Q4B/new.png" alt="Purple flowers on a book" className="md:w-full sm:w-1/2 w-full rounded-3xl" />
+                            <img src="https://i.ibb.co/wMd2Q4B/new.png" alt="Purple flowers on a book" className="md:w-full sm:w-1/2 w-full rounded-3xl" />
+                            <img src="https://i.ibb.co/wMd2Q4B/new.png" alt="Purple flowers on a book" className="md:w-full sm:w-1/2 w-full rounded-3xl" />
+                        </Slider>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </>
+
+    );
+};
+
+export default TaxFiling;
+
+
+
